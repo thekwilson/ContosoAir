@@ -1,4 +1,7 @@
 
+WORK STATUS:
+[![Board Status](https://dev.azure.com/kywils/f9f90e51-dcde-4254-bf52-3dc1f89339ea/a950f549-5051-47c3-8b9d-67afb803f5e4/_apis/work/boardbadge/89c63b81-6dab-457d-bcdf-004c557cb72e?columnOptions=1)](https://dev.azure.com/kywils/f9f90e51-dcde-4254-bf52-3dc1f89339ea/_boards/board/t/a950f549-5051-47c3-8b9d-67afb803f5e4/Microsoft.RequirementCategory)
+
 
 [![Build Status](https://kywils.visualstudio.com/ContosoAir/_apis/build/status/thekwilson.ContosoAir?branchName=master)](https://kywils.visualstudio.com/ContosoAir/_build/latest?definitionId=12&branchName=master)
 

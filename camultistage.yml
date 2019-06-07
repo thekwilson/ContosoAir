@@ -60,6 +60,17 @@ stages:
         artifactName: 'drop'
         downloadType: 'single'
         downloadPath: '$(System.ArtifactsDirectory)'
+    
+    - task: CmdLine@2
+      inputs:
+        script: 'dir'
+        workingDirectory: '$(System.ArtifactsDirectory)'
+
+    - task: CmdLine@2
+      inputs:
+        script: 'dir'
+        workingDirectory: '$(System.DefaultWorkingDirectory)'
+        
 
     - task: AzureResourceGroupDeployment@2
       inputs:
@@ -68,8 +79,8 @@ stages:
         resourceGroupName: $(resourcegroup)
         location: 'East US 2'
         templateLocation: 'Linked artifact'
-        csmFile: '$(System.DefaultWorkingDirectory)/_ContosoAir-CI/drop/Templates/azuredeploy.json'
-        csmParametersFile: '$(System.DefaultWorkingDirectory)/_ContosoAir-CI/drop/Templates/azuredeploy.parameters.json'
+        csmFile: '$(System.DefaultWorkingDirectory)/drop/Templates/azuredeploy.json'
+        csmParametersFile: '$(System.DefaultWorkingDirectory)/drop/Templates/azuredeploy.parameters.json'
         overrideParameters: '-p_environment contosoairkyle'
         deploymentMode: 'Incremental'
 

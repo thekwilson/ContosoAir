@@ -2,7 +2,7 @@ trigger:
   - master
 
 stages:
-- stage: Build and Test
+- stage: BuildandTest
   jobs:
   - job: Build
 
@@ -42,7 +42,7 @@ stages:
       - task: PublishBuildArtifacts@1
         displayName: 'Publish Artifact: drop'
 
-- stage: Deploy to App Service
+- stage: DeploytoAppService
   jobs:
   - job: Deploy
   

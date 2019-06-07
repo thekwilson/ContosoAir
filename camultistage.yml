@@ -97,4 +97,4 @@ stages:
         azureSubscription: 'Northeast Azure TSP Subscription (4fa141ee-5558-4bf3-b338-27e747b044a5)'
         appType: 'webApp'
         WebAppName: $(web)
-        packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+        packageForLinux: '$(System.ArtifactsDirectory)/**/*.zip'

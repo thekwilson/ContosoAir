@@ -45,6 +45,14 @@ stages:
 - stage: Deploy
   jobs:
   - job: Deploy
+  
+    pool:
+      name: Hosted VS2017
+      demands:
+      - msbuild
+      - visualstudio
+      - vstest
+
     steps:
     - task: DownloadBuildArtifacts@0
       inputs:
